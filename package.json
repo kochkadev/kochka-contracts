@@ -1,15 +1,17 @@
 {
   "name": "@kochkadev/kochka-contracts",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf dist && tsc",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kochkadev/kochka-contracts.git"
   },
-  "author": "",
+  "author": "Dalaskor",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kochkadev/kochka-contracts/issues"
@@ -18,5 +20,11 @@
   "description": "",
   "publishConfig": {
     "@kochkadev:registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
   }
 }

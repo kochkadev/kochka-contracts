@@ -1,0 +1,10 @@
+.gitignore
+.eslintignore
+.eslintrc.json
+src/
+.github/
+.vscode/
+.prettierignore
+.prettierrc
+previous-version.txt
+tsconfig.json
