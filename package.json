@@ -15,5 +15,8 @@
     "url": "https://github.com/kochkadev/kochka-contracts/issues"
   },
   "homepage": "https://github.com/kochkadev/kochka-contracts#readme",
-  "description": ""
+  "description": "",
+  "publishConfig": {
+    "@kochkadev:registry": "https://npm.pkg.github.com"
+  }
 }
