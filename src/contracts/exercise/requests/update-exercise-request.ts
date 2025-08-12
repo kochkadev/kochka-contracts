@@ -6,6 +6,6 @@ export const UpdateExerciseRequestSchema = ExerciseSchema.omit({
   createdAt: true,
   updatedAt: true,
 }).partial();
-export type IUpdateExerciseRequestSchema = z.infer<
+export type IUpdateExerciseRequest = z.infer<
   typeof UpdateExerciseRequestSchema
 >;
