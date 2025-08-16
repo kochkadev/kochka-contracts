@@ -2,7 +2,7 @@ import { z } from "zod";
 import { field } from "../../utils";
 
 export const TrainingSchema = z.object({
-  id: field.uuid(),
+  id: field.string(),
   title: field.string(),
   imageUrl: field.url().nullable().optional(),
   createdAt: field.stringISO(),

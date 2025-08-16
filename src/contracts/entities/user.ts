@@ -3,7 +3,7 @@ import { field } from "../../utils";
 import { USER_ROLE } from "../../utils/enums";
 
 export const UserSchema = z.object({
-  id: field.uuid(),
+  id: field.string(),
   username: field.string(),
   passwordHash: field.string(),
   createdAt: field.stringISO(),

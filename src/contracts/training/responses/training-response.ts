@@ -9,7 +9,6 @@ import { field } from "../../../utils";
 export const TrainingResponseSchema = TrainingSchema.extend({
   exercises: field.array(
     TrainingExerciseSchema.omit({
-      id: true,
       trainingId: true,
       exerciseId: true,
       createdAt: true,

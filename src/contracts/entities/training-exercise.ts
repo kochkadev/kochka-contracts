@@ -2,9 +2,9 @@ import { z } from "zod";
 import { field } from "../../utils";
 
 export const TrainingExerciseSchema = z.object({
-  id: field.uuid(),
-  trainingId: field.uuid(),
-  exerciseId: field.uuid(),
+  id: field.string(),
+  trainingId: field.string(),
+  exerciseId: field.string(),
   sets: field.int(),
   repeats: field.int(),
   position: field.number(),

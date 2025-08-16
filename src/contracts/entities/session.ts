@@ -2,9 +2,9 @@ import { z } from "zod";
 import { field } from "../../utils";
 
 export const SessionSchema = z.object({
-  id: field.uuid(),
-  userId: field.uuid(),
-  trainingId: field.uuid(),
+  id: field.string(),
+  userId: field.string(),
+  trainingId: field.string(),
   startedAt: field.stringISO(),
   finishAt: field.stringISO().nullable(),
 });

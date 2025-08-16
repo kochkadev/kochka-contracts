@@ -3,3 +3,4 @@ export * from "./exercise";
 export * from "./training";
 export * from "./training-exercise";
 export * from "./session";
+export * from "./session-exercise";
