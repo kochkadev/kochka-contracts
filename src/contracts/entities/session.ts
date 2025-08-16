@@ -6,6 +6,6 @@ export const SessionSchema = z.object({
   userId: field.uuid(),
   trainingId: field.uuid(),
   startedAt: field.stringISO(),
-  finishAt: field.stringISO(),
+  finishAt: field.stringISO().nullable(),
 });
 export type ISession = z.infer<typeof SessionSchema>;
