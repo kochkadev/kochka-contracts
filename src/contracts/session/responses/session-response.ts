@@ -13,7 +13,6 @@ export const SessionResponseSchema = SessionSchema.omit({
   exercises: field.array(
     SessionExerciseSchema.omit({
       sessionId: true,
-      trainingExerciseId: true,
       createdAt: true,
       updatedAt: true,
     }),
